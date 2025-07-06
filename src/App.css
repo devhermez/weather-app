@@ -183,7 +183,7 @@ h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   align-self: center;
   justify-self: center;
-  padding-top: 15px;
+  margin-top: 20px;
 }
 
 @media (max-width: 855px) {
@@ -235,7 +235,7 @@ h2 {
   }
 
   .copyright {
-    padding-top: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -377,4 +377,65 @@ body.default {
     rgba(141, 134, 141, 0.4)
   );
   color: #ffffff;
+}
+
+/* MEDIA QUERIES (UPDATED FOR MOBILE)*/
+/* MOBILE */
+@media (max-width: 768px) {
+  .main-weather {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  .main-upper {
+    align-self: center;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .main-lower {
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+  }
+  .sub-weather {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+  }
+  .forecast-weather {
+    width: 90%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+  }
+  .forecast-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .calendar-icon {
+    font-size: 3em;
+  }
+
+  .forecast-container {
+    gap: 20px;
+  }
+  .copyright {
+    margin-top: 40px;
+  }
+
+  .weather-container {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 }

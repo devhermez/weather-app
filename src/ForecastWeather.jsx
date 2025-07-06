@@ -4,7 +4,7 @@ const ForecastWeather = ({ forecast }) => {
   return (
     <div className="forecast-weather backdrop-blur-xs">
       <div className="forecast-title">
-        <p>🗓️</p>
+        <p className="calendar-icon">🗓️</p>
         <h2 className="text-lg">5-Day Forecast (12:00 PM)</h2>
       </div>
 
